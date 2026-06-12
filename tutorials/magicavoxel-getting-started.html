@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting started with MagicaVoxel - Isoroom3D</title>
+  <meta name="description" content="Install MagicaVoxel, learn the tools, and place your first voxels for your isometric room project." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="../index.html" class="nav__logo">Isoroom3D</a>
+      <button class="nav__toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav__links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html" class="active">Tutorials</a></li>
+        <li><a href="../gallery.html">Gallery</a></li>
+        <li><a href="../resources.html">Resources</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="article">
+    <div class="container">
+      <div class="article__header">
+        <h1>Getting started with MagicaVoxel</h1>
+        <p class="article__meta">MagicaVoxel tutorial &middot; Part 1 &middot; Beginner</p>
+      </div>
+
+      <div class="article__body">
+        <p>
+          MagicaVoxel is a free, lightweight voxel editor that's perfect for building
+          colorful, chunky isometric scenes. In this first tutorial, we'll install
+          MagicaVoxel, get familiar with its interface, and place our first voxels.
+        </p>
+
+        <h2>1. Download MagicaVoxel</h2>
+        <ol>
+          <li>Download MagicaVoxel from its official page (available for Windows and macOS).</li>
+          <li>Unzip the downloaded folder &mdash; MagicaVoxel doesn't need a traditional installer, just run the executable inside.</li>
+          <li>Launch the app. You'll see an empty voxel grid in the center of the screen.</li>
+        </ol>
+
+        <div class="callout">
+          Tip: MagicaVoxel is donation-based but completely free to use &mdash; you
+          don't need to pay anything to access all features.
+        </div>
+
+        <h2>2. Get familiar with the interface</h2>
+        <ul>
+          <li><strong>Viewport (center)</strong> &mdash; shows your voxel model. The default view is already close to isometric!</li>
+          <li><strong>Tool palette (top left)</strong> &mdash; tools for adding, removing and painting voxels (Voxel, Face, Paint, etc.).</li>
+          <li><strong>Color palette (right side)</strong> &mdash; pick the color/material applied by your current tool.</li>
+          <li><strong>World / Model panel (bottom)</strong> &mdash; manage canvas size and multiple models within a scene.</li>
+        </ul>
+        <p>
+          To navigate: hold the <strong>right mouse button</strong> and drag to orbit,
+          scroll to zoom, and hold <strong>middle mouse button</strong> to pan.
+        </p>
+
+        <h2>3. Set your canvas size</h2>
+        <p>
+          Before placing voxels, define how big your scene can be:
+        </p>
+        <ol>
+          <li>In the bottom panel, find the <strong>Editor</strong> tab and the canvas size fields (e.g. 32 x 32 x 32).</li>
+          <li>For a small room, a size like <code>24 x 24 x 24</code> is a good starting point &mdash; large enough for walls and furniture, small enough to stay manageable.</li>
+        </ol>
+
+        <h2>4. Place your first voxels</h2>
+        <ol>
+          <li>Select the <strong>Voxel</strong> tool (usually labeled "V") from the tool palette.</li>
+          <li>Pick a color from the palette on the right.</li>
+          <li>Left-click on the grid to add a voxel. Left-click on an existing voxel's face to add another voxel attached to it.</li>
+          <li>Right-click (with the Voxel tool) to remove a voxel.</li>
+        </ol>
+        <p>
+          Try building a simple floor: select a base color, then click across the
+          grid to fill in a flat square &mdash; this will become the foundation of your room.
+        </p>
+
+        <div class="callout">
+          MagicaVoxel's default camera is already close to an isometric angle.
+          You can fine-tune it using the rotation controls above the viewport,
+          or press numeric keys to snap to preset views.
+        </div>
+
+        <h2>Next steps</h2>
+        <p>
+          With the basics down, you're ready to start building actual structures.
+          In the next tutorial we'll combine voxels into walls, a floor, and simple
+          furniture shapes.
+        </p>
+        <p><em>Part 2 coming soon.</em></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Isoroom3D &mdash; Built with HTML, CSS &amp; JS.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

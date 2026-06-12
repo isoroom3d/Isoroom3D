@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Getting started with Blender - Isoroom3D</title>
+  <meta name="description" content="Install Blender, learn the interface, and set up your first isometric camera for your isometric room project." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="../index.html" class="nav__logo">Isoroom3D</a>
+      <button class="nav__toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav__links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html" class="active">Tutorials</a></li>
+        <li><a href="../gallery.html">Gallery</a></li>
+        <li><a href="../resources.html">Resources</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="article">
+    <div class="container">
+      <div class="article__header">
+        <h1>Getting started with Blender</h1>
+        <p class="article__meta">Blender tutorial &middot; Part 1 &middot; Beginner</p>
+      </div>
+
+      <div class="article__body">
+        <p>
+          Blender is a free, open-source 3D creation suite available for Windows,
+          macOS and Linux. In this first tutorial, we'll install Blender, get
+          familiar with the interface, and set up a camera with an isometric
+          (orthographic) view &mdash; the foundation for every isometric room.
+        </p>
+
+        <h2>1. Install Blender</h2>
+        <ol>
+          <li>Go to the official Blender website and download the latest version for your operating system.</li>
+          <li>Run the installer and follow the default steps.</li>
+          <li>Launch Blender. You should see the default scene with a cube, a light and a camera.</li>
+        </ol>
+
+        <div class="callout">
+          Tip: Blender is completely free, with no trial period or feature restrictions.
+          Always download it from the official source.
+        </div>
+
+        <h2>2. Get familiar with the interface</h2>
+        <p>Blender's main window is divided into a few key areas:</p>
+        <ul>
+          <li><strong>3D Viewport</strong> &mdash; the large central area where you see and interact with your scene.</li>
+          <li><strong>Outliner</strong> &mdash; top right, lists every object in your scene (camera, lights, meshes).</li>
+          <li><strong>Properties panel</strong> &mdash; bottom right, lets you edit settings for the selected object, render, and scene.</li>
+          <li><strong>Timeline</strong> &mdash; bottom, used for animation (not needed for a static isometric room).</li>
+        </ul>
+        <p>
+          To move around the viewport: hold the <strong>middle mouse button</strong> and drag to orbit,
+          scroll to zoom, and hold <strong>Shift + middle mouse button</strong> to pan.
+        </p>
+
+        <h2>3. Set up an isometric camera</h2>
+        <p>
+          A true isometric view uses an <strong>orthographic</strong> camera (no perspective distortion)
+          angled so that all three axes appear equally foreshortened. Here's how to set it up:
+        </p>
+        <ol>
+          <li>Select the default camera in the Outliner.</li>
+          <li>In the Properties panel, click the camera icon (Object Data Properties).</li>
+          <li>Under <strong>Lens</strong>, change the type from <em>Perspective</em> to <strong>Orthographic</strong>.</li>
+          <li>
+            Rotate the camera to a classic isometric angle: set its rotation to
+            <code>X = 54.7&deg;</code>, <code>Y = 0&deg;</code>, <code>Z = 45&deg;</code> in the Object Properties tab.
+          </li>
+          <li>Position the camera away from the origin (e.g. <code>X = 10, Y = -10, Z = 10</code>) so it looks toward your scene.</li>
+          <li>Press <code>Numpad 0</code> to preview the view through the camera at any time.</li>
+        </ol>
+
+        <div class="callout">
+          A handy shortcut: with the camera selected, press <code>Ctrl + Numpad 0</code>
+          to snap your current viewport view to become the camera's view &mdash;
+          useful once you've manually framed a nice angle.
+        </div>
+
+        <h2>4. Adjust the orthographic scale</h2>
+        <p>
+          The <strong>Orthographic Scale</strong> property (next to the Lens type) controls
+          how much of the scene is visible &mdash; think of it as zoom. Increase it to fit
+          more of your room in frame, decrease it to zoom in on details.
+        </p>
+
+        <h2>Next steps</h2>
+        <p>
+          With your isometric camera ready, you're set up to start building. In the next
+          tutorial we'll model the walls, floor and basic furniture for your first room.
+        </p>
+        <p><em>Part 2 coming soon.</em></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Isoroom3D &mdash; Built with HTML, CSS &amp; JS.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
