@@ -298,6 +298,12 @@ img {
   object-fit: cover;
 }
 
+.card__media--logo img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+}
+
 .card__credit {
   display: block;
   margin-top: 8px;
