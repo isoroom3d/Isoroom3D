@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Modeling your first room in Blender - Isoroom3D</title>
+  <meta name="description" content="Build walls, floor and basic furniture for your isometric room using simple shapes in Blender." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="../index.html" class="nav__logo">Isoroom3D</a>
+      <button class="nav__toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav__links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html" class="active">Tutorials</a></li>
+        <li><a href="../gallery.html">Gallery</a></li>
+        <li><a href="../resources.html">Resources</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="article">
+    <div class="container">
+      <div class="article__header">
+        <h1>Modeling your first room</h1>
+        <p class="article__meta">Blender tutorial &middot; Part 2 &middot; Beginner</p>
+      </div>
+
+      <div class="article__body">
+        <p>
+          In <a href="blender-getting-started.html">Part 1</a> we set up an isometric
+          camera. Now it's time to build something for it to look at: a simple room
+          with a floor, two walls, and a piece of furniture. Everything in this
+          tutorial is built from basic shapes &mdash; cubes &mdash; scaled and positioned.
+        </p>
+
+        <h2>1. Clean up the default scene</h2>
+        <ol>
+          <li>Select the default cube and delete it (press <code>X</code> or <code>Delete</code>).</li>
+          <li>Keep the camera and light &mdash; we'll reuse them.</li>
+        </ol>
+
+        <h2>2. Build the floor</h2>
+        <ol>
+          <li>Add a new cube: <strong>Add &rarr; Mesh &rarr; Cube</strong> (or press <code>Shift + A</code>).</li>
+          <li>
+            With the cube selected, press <code>S</code> then <code>Z</code> then type
+            <code>0.05</code> and press <code>Enter</code> to flatten it into a thin slab.
+          </li>
+          <li>
+            Press <code>S</code> then <code>Shift + Z</code> and type <code>4</code> to scale
+            it up on the X and Y axes, making it a wide floor.
+          </li>
+          <li>Move it down slightly so its top sits at <code>Z = 0</code> using <code>G</code>, <code>Z</code>, and typing a value.</li>
+        </ol>
+
+        <div class="callout">
+          Reminder: <code>G</code> = grab/move, <code>R</code> = rotate, <code>S</code> = scale.
+          Typing <code>X</code>, <code>Y</code> or <code>Z</code> after these constrains the
+          action to that axis &mdash; very useful for keeping things aligned.
+        </div>
+
+        <h2>3. Add two walls</h2>
+        <p>We'll reuse the same trick &mdash; a scaled cube &mdash; to make flat walls.</p>
+        <ol>
+          <li>Add another cube (<code>Shift + A &rarr; Mesh &rarr; Cube</code>).</li>
+          <li>Scale it down on one axis to make it thin (e.g. <code>S</code>, <code>X</code>, <code>0.05</code>).</li>
+          <li>Scale it up on the other two axes so it covers one edge of the floor (e.g. <code>S</code>, <code>Shift + X</code>, <code>4</code> &mdash; height and depth).</li>
+          <li>Move it (<code>G</code>) so it sits flush against one edge of the floor, resting on top of it.</li>
+          <li>Duplicate it with <code>Shift + D</code>, then press <code>Escape</code> to cancel the move (keeping it in place), and rotate the duplicate <code>90&deg;</code> with <code>R</code>, <code>Z</code>, <code>90</code> to create the second wall on an adjacent edge.</li>
+        </ol>
+
+        <h2>4. Add a simple piece of furniture</h2>
+        <p>
+          A small box makes a perfectly good stand-in for furniture (a table, a chest,
+          a cabinet &mdash; whatever fits your scene).
+        </p>
+        <ol>
+          <li>Add a new cube and scale it to a furniture-like shape, e.g. wider than it is tall.</li>
+          <li>Move it to sit on top of the floor, away from the walls.</li>
+          <li>
+            Repeat with a couple more cubes of different sizes to build up a small
+            scene &mdash; remember, simple shapes are enough at this stage.
+          </li>
+        </ol>
+
+        <h2>5. Frame the shot</h2>
+        <p>
+          Switch to the camera view (<code>Numpad 0</code>) and adjust the camera's
+          position and orthographic scale (from Part 1) until your floor, walls and
+          furniture are nicely framed within the view.
+        </p>
+
+        <div class="callout">
+          Tip: select all your objects (<code>A</code>) and use <strong>View &rarr; Frame Selected</strong>
+          (or <code>Numpad .</code>) to quickly center everything in the viewport while you work.
+        </div>
+
+        <h2>Next steps</h2>
+        <p>
+          You now have a basic room blocked out. In the next tutorial we'll add
+          materials, set up lighting, and render the final image.
+        </p>
+        <p><em>Part 3 coming soon.</em></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Isoroom3D &mdash; Built with HTML, CSS &amp; JS.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

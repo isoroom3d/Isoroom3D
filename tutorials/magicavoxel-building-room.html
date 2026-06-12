@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Building your first room in MagicaVoxel - Isoroom3D</title>
+  <meta name="description" content="Combine voxels to create walls, a floor and simple furniture for your isometric room in MagicaVoxel." />
+  <link rel="stylesheet" href="../css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="../index.html" class="nav__logo">Isoroom3D</a>
+      <button class="nav__toggle" aria-label="Toggle navigation">&#9776;</button>
+      <ul class="nav__links">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="index.html" class="active">Tutorials</a></li>
+        <li><a href="../gallery.html">Gallery</a></li>
+        <li><a href="../resources.html">Resources</a></li>
+        <li><a href="../blog.html">Blog</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="article">
+    <div class="container">
+      <div class="article__header">
+        <h1>Building your first room</h1>
+        <p class="article__meta">MagicaVoxel tutorial &middot; Part 2 &middot; Beginner</p>
+      </div>
+
+      <div class="article__body">
+        <p>
+          In <a href="magicavoxel-getting-started.html">Part 1</a> we placed our
+          first voxels and set up a canvas. Now let's combine voxels into a small
+          room: a floor, two walls, and a simple piece of furniture.
+        </p>
+
+        <h2>1. Plan your layout</h2>
+        <p>
+          Before placing voxels, decide roughly how big your room will be within
+          your canvas. For a <code>24 x 24 x 24</code> canvas, a good starting point is:
+        </p>
+        <ul>
+          <li>Floor: a flat square covering most of the base, e.g. 20 x 20 voxels, 1 voxel thick.</li>
+          <li>Walls: along two adjacent edges of the floor, a few voxels tall (e.g. 8 voxels).</li>
+          <li>Furniture: small shapes placed away from the walls.</li>
+        </ul>
+
+        <h2>2. Build the floor</h2>
+        <ol>
+          <li>Select the <strong>Voxel</strong> tool and pick a base color (e.g. a warm wood tone).</li>
+          <li>
+            Use the <strong>Box</strong> tool (often labeled "B" or found in the tool palette)
+            to draw a filled rectangle in one click-drag instead of placing voxels one by one.
+          </li>
+          <li>Draw a flat rectangle on the bottom layer of your canvas to form the floor.</li>
+        </ol>
+
+        <div class="callout">
+          Tip: hold the modifier shown in the tool tooltip (often <code>Shift</code>)
+          while using the Box tool to constrain it to a single layer &mdash; handy
+          for keeping the floor perfectly flat.
+        </div>
+
+        <h2>3. Build the walls</h2>
+        <ol>
+          <li>Pick a different color for the walls so they read clearly against the floor.</li>
+          <li>Switch to a side view to make it easier to build straight up.</li>
+          <li>
+            Using the Box tool, draw a tall, thin rectangle along one edge of the
+            floor, several voxels high &mdash; this is your first wall.
+          </li>
+          <li>Repeat along an adjacent edge of the floor for the second wall.</li>
+        </ol>
+
+        <h2>4. Add furniture</h2>
+        <p>
+          Furniture in voxel art is just smaller groups of voxels in different colors.
+          Try building:
+        </p>
+        <ul>
+          <li>A small bed or sofa: a low, wide block with a slightly taller block as a backrest.</li>
+          <li>A table: four thin voxel "legs" with a flat slab on top.</li>
+          <li>A shelf: a thin vertical block against a wall with small colored voxels on top as "books" or "items".</li>
+        </ul>
+        <p>
+          Place these on top of the floor, leaving some empty space so the room
+          doesn't feel cramped.
+        </p>
+
+        <h2>5. Check your isometric view</h2>
+        <p>
+          Rotate the view (right-click drag) until you're looking at the room from
+          a corner &mdash; this is the classic isometric room composition, showing
+          two walls and the floor at once.
+        </p>
+
+        <div class="callout">
+          MagicaVoxel includes a built-in renderer (the <strong>Render</strong> tab).
+          Even at this early stage, try a quick render to get a feel for how
+          lighting affects your colors.
+        </div>
+
+        <h2>Next steps</h2>
+        <p>
+          With a basic room built, the next tutorial will cover coloring techniques
+          and using MagicaVoxel's renderer to produce a polished final image.
+        </p>
+        <p><em>Part 3 coming soon.</em></p>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Isoroom3D &mdash; Built with HTML, CSS &amp; JS.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
