@@ -257,6 +257,7 @@ img {
 
 .card {
   display: block;
+  position: relative;
   border: 1px solid var(--color-border);
   border-radius: var(--radius);
   overflow: hidden;
@@ -269,6 +270,12 @@ img {
 .card:hover {
   transform: translateY(-3px);
   box-shadow: 0 12px 24px -16px rgba(255, 107, 157, 0.35);
+}
+
+.card__link-overlay {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
 }
 
 .card__media {
@@ -323,6 +330,8 @@ img {
 }
 
 .card__link {
+  position: relative;
+  z-index: 2;
   display: inline-block;
   margin-top: 12px;
   font-weight: 600;
